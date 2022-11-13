@@ -40,6 +40,7 @@
 
             ws.send(JSON.stringify(payLoad));
         })
+
         btnCreate.addEventListener("click", e => {
             const payLoad = {
                 "method": "create",
@@ -72,7 +73,6 @@
                     const color = response.game.state[b];
                     const ballObject = document.getElementById("ball"+b);
                     ballObject.style.backgroundColor = color;
-
                 }
             }
 
